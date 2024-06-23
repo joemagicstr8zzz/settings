@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inject Settings</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f8f9fa;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            font-size: 24px;
+            color: #d93025;
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+        input[type="text"], input[type="number"] {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            box-sizing: border-box;
+        }
+        select, button {
+            padding: 10px;
+            margin-top: 10px;
+            width: 100%;
+        }
+        .footer {
+            margin-top: 20px;
+            text-align: center;
+            color: #70757a;
+        }
+        .footer a {
+            color: #70757a;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Inject Advanced Settings</h1>
+        <label for="presetName">Preset Name:</label>
+        <input type="text" id="presetName" name="presetName">
+        
+        <label for="presetId">Preset ID:</label>
+        <input type="text" id="presetId" name="presetId">
+        
+        <label for="apiKey">API Key:</label>
+        <input type="text" id="apiKey" name="apiKey">
+        
+        <label for="webhookUrl">Webhook URL:</label>
+        <input type="text" id="webhookUrl" name="webhookUrl">
+        
+        <label for="refreshRate">Refresh Rate (seconds):</label>
+        <input type="number" id="refreshRate" name="refreshRate" min="1">
+        
+        <label for="logLevel">Log Level:</label>
+        <select id="logLevel" name="logLevel">
+            <option value="info">Info</option>
+            <option value="warning">Warning</option>
+            <option value="error">Error</option>
+        </select>
+        
+        <button type="submit">Save Settings</button>
+    </div>
+    <div class="footer">
+        <a href="#">Privacy</a>
+        <a href="#">Terms</a>
+        <a href="#">Settings</a>
+    </div>
+</body>
+</html>
